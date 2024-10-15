@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('Image/pbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+        
+.container {
+    width: 800px;
+    height: 500px;
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border: 3px solid black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:
+        "header header"
+        "picture text"
+        "audio text";
+}
+h1 {
+    grid-area: header;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+}        
+
+.picture {
+    grid-area: picture;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.picture img {
+    width: 100%;
+    max-width: 200px; /* Adjust as per your picture size */
+    height: auto;
+}        
+
+.audio {
+    grid-area: audio;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+        
+.left-section img {
+    width: 100%;
+    max-width: 200px; /* Max width for the picture */
+    height: auto;
+    border: 2px solid black;
+}
+        
+.audio audio {
+            width: 100%;
+}    
+
+
+.text {
+    grid-area: text;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+    font-size: small;
+}

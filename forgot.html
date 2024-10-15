@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js" defer></script>
+    <title>Resigned</title>
+
+</head>
+
+
+<body>
+    
+
+    <div class="container">
+        
+        <!-- Header Title -->
+        <h1>Forgot Password</h1>
+          
+        <form class="formclass" action="/submit" method="post">
+                <div class="form-group">
+                    <div>Username</div>
+                    <input type="user" name="username" class="form-control" required>
+                </div>
+        <form class="formclass" action="/submit" method="post">
+                <div class="form-group">
+                    <div>Email</div>
+                    <input type="email" name="Email" class="form-control" placeholder="hihi@gmail.com" required>
+                </div>
+        <form class="formclass" action="/submit" method="post">
+                <div class="form-group">
+                    <label for="phone">Enter a phone number:</label>
+                    <input type="tel" name="phone" class="form-control" placeholder="123-456-78" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+
+
+            <div class="form-group">
+                
+                <a href="login.html" class="login">Login</a> |
+                <a href="resigned.html" class="resigned">Resigned</a>
+            </div>
+    
+            <div class="form-group">
+                <input type="submit" value="Submit" class="form-control">
+            </div>
+        </form>
+        
+
+        
+    </div>
+
+</body>
+
+</html>
+

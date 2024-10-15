@@ -1,0 +1,225 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url('Image/pbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container>header{
+    height: 100%;
+    width: 100%;
+    background-image: url('image/Background.png');
+    background-size: 100% 100%;
+    height: 0px;
+    padding-bottom: 25%;
+
+}
+.container >nav{
+    line-height: 40px;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+.container >article{
+    min-height: 400px;
+    width: 75%;
+    background-color: white;
+    float: left;
+}
+.container >aside{
+    min-height: 600px;
+    width: 25%;
+    background-color: lightgray;
+    float: right;
+}
+.container >footer{
+    border-top: 5px double orangered;
+    line-height: 50px;
+    background-color: lightcyan;
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+}
+.container >nav>a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.container >nav >a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+/*------------------------iframe---------------------------------------*/
+
+
+iframe[name=page]{
+    width: 100%;
+    min-height: 600px;
+}
+
+/*----------------head-----------------------------------------------*/
+header{
+    position: relative;
+}
+.top-right{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-bottom-left-radius: 30px;
+    text-align: right;
+    color: yellow;
+    font-size: large;
+}
+.top-right>a{
+    color: black;
+    font-size: larger;
+}
+.company-info{
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    text-align: bottom left;
+    color: tomato;
+    font-size: larger;
+}
+.company-info h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.company-info h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    size: 40%;
+}
+/*---------------------------------------------------------------*/
+/*
+menu on
+*/
+.menu>ul>li{
+    display: inline-block;
+}
+.menu>ul>li>a{
+    display: block;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    color: white;
+    padding: 0 10px;
+    line-height: 40px;
+}
+
+.menu>ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    border-radius:3px;
+    background-color:orangered;
+    text-align:center;
+
+}
+.menu>ul>li>a:hover{
+    color: yellow;
+}
+
+/*---------------------------------------------------------------*/
+.menu>ul>li{
+    display: inline-block;
+}
+.menu>ul>li>a{
+    display: block;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    color: white;
+    padding: 0 10px;
+    line-height: 40px;
+}
+.menu>ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    border-radius:3px;
+    background-color:blue;
+    text-align:center;
+
+}
+.menu>ul>li>a:hover{
+    color: yellow;
+}
+
+/*--------------------------chinh hover va color trong ui class menu-------------------------------------*/
+.menu>ul>li{
+    position: relative;
+}
+
+.menu ul ul{
+    position: absolute;
+    display: none;
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    border-radius:3px;
+    width:200px;
+    background-color:white;
+    box-shadow:0 0 1px gray;
+
+}
+.menu ul ul a{
+    display: block;
+    line-height:30px;
+    color:orangered;
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:larger;
+    padding:0 10px;
+}
+.menu>ul>li:hover>ul{
+    display: block;
+    background-color: yellow;
+    color: white;
+} 
+.menu ul ul a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+
+/*------------------------aside---------------------------------------*/
+.vmenu{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    border-radius: 3px;
+    box-shadow:0 0 2px gray;
+}
+.vmenu a{
+    background: url('image/bullet-hover.jpg') no-repeat 10px center;
+    background-size: 15px;
+    display: block;
+    border-bottom: 1px dotted orangered;
+    color: blue;
+    font-variant: small-caps;
+    font-size: larger;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px;
+}
+ .vmenu a:hover{
+    background: url('image/bullet.png') no-repeat 10px center;
+    background-size: 20px;
+    border-bottom: 1px dotted white;
+    background-color: yellow;
+    color: orangered;;
+ }
+ 
+/*----------------------audio-----------------------------------------*/
+
+audio{
+    position: absolute;
+    bottom: 0px;
+}

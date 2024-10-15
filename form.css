@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('Image/pbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+        
+.container {
+    width: 350px;
+    height: 550px;
+
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border: 3px solid black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    grid-template-rows: 50px 1fr;
+}
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}     
+
+/*                form                      */
+
+.formclass{
+    text-align: center;
+    font-size: larger;
+    border-style: double;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;/*chinh thang hang*/
+}
+
+.form-group{
+    width: 100%;
+    margin-bottom: 15px;
+
+    
+}
+.form-control{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: large;
+    width: auto;
+
+}
